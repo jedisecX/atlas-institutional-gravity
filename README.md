@@ -24,7 +24,7 @@ map for D3/Sigma/Neo4j/Gephi.
 ## Install
 
 ```bash
-git clone https://github.com/jedisecx/un-netmap.git
+git clone https://github.com/jedisecx/atlas-institutional-gravity
 cd un-netmap
 python3 -m venv .venv
 source .venv/bin/activate
