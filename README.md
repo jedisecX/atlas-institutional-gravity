@@ -23,9 +23,31 @@ map for D3/Sigma/Neo4j/Gephi.
 
 ## Install
 
+# Update
+   *create the following tree
+
+un-netmap/
+  input/
+    names.txt
+  out/
+    .gitkeep
+  cache/
+    .gitkeep
+  scripts/
+    build_network.py
+    enrich_web.py
+    render_html.py
+  docs/
+    methodology.md
+  .gitignore
+  LICENSE
+  README.md
+  requirements.txt
+
 ```bash
 git clone https://github.com/jedisecx/atlas-institutional-gravity
 cd un-netmap
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
