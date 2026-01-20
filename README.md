@@ -1,2 +1,31 @@
 # atlas-institutional-gravity
 OSINT for UN and the committee of 300
+# UN NetMap (UN / Political / Financial Network Mapper)
+
+UN NetMap builds an evidence-backed relationship graph from a raw list of names.
+It normalizes/deduplicates messy OCR-like input and enriches entities using public sources
+(UN-related pages, government mission pages, major institutions), then exports a network
+map for D3/Sigma/Neo4j/Gephi.
+
+## What it does
+
+- Ingests raw names (copy/paste, OCR dumps, mixed formatting)
+- Normalizes + deduplicates entities (aliases preserved)
+- Enriches with automated web lookups (cached + rate-limited)
+- Produces an evidence-backed graph:
+  - nodes: people + institutions
+  - edges: relationship types with confidence + citations (URL + snippet)
+- Exports:
+  - `out/network.json` (D3/Sigma/Cytoscape ready)
+  - `out/nodes.csv`, `out/edges.csv`
+  - `out/matches_report.csv`
+  - Optional: `out/graph.html` interactive viewer
+
+## Install
+
+```bash
+git clone https://github.com/YOURUSER/un-netmap.git
+cd un-netmap
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
