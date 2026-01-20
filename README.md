@@ -24,7 +24,7 @@ map for D3/Sigma/Neo4j/Gephi.
 ## Install
 
 # Update
-   *create the following tree
+   create the following tree
 
 un-netmap/
   input/
